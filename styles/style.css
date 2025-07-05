@@ -67,7 +67,7 @@ ol {
   display: flex;
   align-items: flex-end;
   gap: 26px;
-  width: 1140px;
+  width: 1140px; 
 }
 
 /* Блок с видео */
