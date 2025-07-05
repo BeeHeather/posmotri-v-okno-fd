@@ -83,10 +83,11 @@ ol {
   margin-bottom: 16px;
 }
 
-.result__video-container video {
+.result__video-container .result__video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 /* Форма поиска */
@@ -126,7 +127,7 @@ ol {
   border: 1px solid #fff;
   border-width: 1px 0;
   color: #fff;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   background-color: transparent;
@@ -167,10 +168,14 @@ ol {
   opacity: 1;
 }
 
+/* Подчеркивание при наведении в соответствии с макетом */
+.search-form__label-text:hover {
+  text-decoration: underline;
+}
+
 .search-form__submit-button {
   align-self: flex-end;
   width: 194px;
-  height: 34px;
 }
 
 /* Блок со списком карточек */
@@ -279,10 +284,10 @@ ol {
 
 /* Кнопки */
 .button {
-  height: 34px;
+  min-height: 34px;
   border: 1px solid #fff;
   color: #fff;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
@@ -292,7 +297,6 @@ ol {
 
 .more-button {
   align-self: stretch;
-  min-height: 34px;
 }
 
 .button:hover {
